@@ -1,0 +1,359 @@
+/* POR DEFECTO WOOCOMMERCE */
+.wc-block-components-radio-control {
+	max-width: 630px;
+}
+.wc-block-components-radio-control-accordion-content{
+    background-color: white;
+}
+.wc-block-components-radio-control__option {
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    background-color: #f8f8f8;
+    border-color: #ebebeb;
+    padding: 15px;
+    margin: -1px 0 0 0;
+    font-weight: normal;
+    line-height: 2em;
+    display: flex;
+    align-items: center;
+}
+.wc-block-components-radio-control__option-checked {
+    background-color: #f8f8f8;
+    border-color: #ebebeb;
+}
+.wc-block-components-radio-control__option-checked::before {
+    content: '';
+    margin-right: 1em;
+}
+.wc-block-components-radio-control__option-layout {
+    display: flex;
+	/*align-items: center;*/
+}
+.wc-block-components-radio-control__label-group {
+    display: flex;
+    flex-direction: column;
+}
+.wc-block-components-radio-control__label {
+    font-weight: bold;
+    font-size: 0.92em;
+}
+.wc-block-components-radio-control__label .sub {
+    font-weight: normal;
+    font-size: 0.92em;
+    color: #b0b0b0;
+}
+.payment_box {
+    display: none;
+    width: 90%;
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.5) #888888;
+    padding: 1em 28px;
+    margin: 0 0 0 0;
+    font-size: 0.92em;
+    left: -2px;
+}
+
+/* PERSONALIZACION */
+.wc-block-components-radio-control__option-checked {
+	background-color: #fff;
+}
+.wc-block-components-radio-control__input {
+	margin-right: 0.75rem;	
+}
+.wc-block-components-radio-control__label {
+	display: inline-block;
+	font-weight: 600;
+	color: #000;
+	line-height: 20px;
+	font-size: 16px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.wc-block-components-radio-control__label .sub {
+	font-weight: 400;
+	display: block;
+	font-size: 14px;
+	color: #b0b0b0;
+}
+.payment_box {
+	width: 100%;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+    left: 0;
+}
+
+.methods_group {
+	display: inline-block;
+	width: 34%;
+	text-align: right;
+	margin: 0;
+	vertical-align: middle;
+}
+.method_item {
+	display: inline-block;
+	vertical-align: middle;
+}
+.method_item img {
+	vertical-align: middle;
+}
+.pagopar_payments {
+	list-style: none;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.pagopar_payments > li {
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	transition: all 200ms ease;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-color: #f8f8f8;
+	padding: 0.75rem;
+	width: 100%;
+	box-sizing: border-box;
+	margin-bottom: 0.5rem;
+}
+.pagopar_payments > li.active {
+	border-color: #0f68a8;
+	background-color: #ecf6ff;
+}
+.pagopar_payments_radio {
+	width: 5%;
+	margin-right: 0.75rem;
+}
+.pagopar_payments > li label {
+	position: relative;
+	font-weight: normal;
+	font-size: 15px;
+	width: 60%;
+	box-sizing: border-box;
+	padding-left: 1.25rem;
+}
+.pagopar_payments > li > label > input {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	width: auto;
+}
+.pagopar-copy {
+	display: block;
+	text-align: right;
+	font-size: 13px;
+	line-height: 22px;
+	color: #7f7f7f;
+	vertical-align: middle;
+}
+.pagopar-copy img {
+	display: inline;
+	vertical-align: top;
+	margin-left: 5px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 767px) {
+	.wc-block-components-radio-control__option {
+		display: block;
+	}
+	.methods_group {
+		display: block;
+		width: 100%;
+		text-align: left;
+		max-width: none;
+		padding-left: 1.5rem;
+	}
+	.methods_group {
+		padding-left:10%;
+	}
+	.wc-block-components-radio-control__label {
+		width: 100%;
+		max-width: 80%;
+		padding-bottom: .25rem;
+	}
+	.pagopar_payments > li label {
+		display: block;
+		max-width: 100%;
+	}
+}
+
+/* FIXES */
+.payment_box {
+	padding: .5rem 28px;
+	background: #FFF;
+}
+.pagopar_payments {
+	padding-left: 0 !important;
+}
+.pagopar_payments > li {
+	margin-bottom: 8px !important;
+}
+.pagopar_payments > li label {
+	padding-left: 20px;
+}
+.pagopar-copy {
+	font-size: 13px !important;
+}
+.pagopar-copy img {
+	display: inline-block !important;
+}
+.wc-block-components-radio-control__label .sub {
+	padding-left: 0px;
+}
+.sub_payment_method{
+    cursor: pointer;
+}
+.methods_grupo_label{
+    padding-left: 0px !important;
+}
+.methods_group {
+	width: 100%;
+	text-align: left;
+	padding-left: 30px;
+}
+.method_item {
+	margin-left: 2px;
+	margin-right: 2px;
+}
+.method_item img {
+	margin: 0 !important;
+	max-width: 42px;
+	max-height: 25px;
+}
+.pagopar_payments > li label {
+	width: 52%;
+	font-family: sans-serif;
+}
+.methods_group {
+	width: 48%;
+}
+@media (max-width: 767px) {
+	.methods_group {
+		width: 100%;
+		padding-left: 30px;
+		margin-bottom: 5px
+	}
+	.pagopar_payments > li label {
+		width: 100%;
+	}
+	.methods_group {
+		width: 100%;
+	}
+	.payment_box {
+		padding-top: 15px;
+		padding-bottom: 10px
+	}
+	.wc-block-components-radio-control__label {
+		margin-bottom: 0;
+	}
+}
+
+/* FIXES 2 */
+.wc-block-components-radio-control__label {
+	display: inline !important;
+	line-height: 20px !important;
+	font-size: 16px !important;
+	padding-left: 0 !important;
+}
+.wc-block-components-radio-control__label .sub {
+	font-size: 14px;
+}
+.methods_group {
+	width: 100% !important;
+}
+.wc-block-components-radio-control__input {
+	display: inline !important;
+	position: relative;
+	top: 3px;
+}
+.pagopar_payments > li > label > input {
+	margin-top: auto !important;
+	margin-bottom: auto !important;
+}
+.wc-block-components-radio-control__label::before {
+	display: none !important;
+}
+.payment_box {
+	margin-top: 1.5em;
+}
+.wc-block-components-radio-control__option img {
+	margin-left: 0;
+}
+
+/* PROMOS - WooCommerce Blocks Checkout */
+.wc-block-components-radio-control__label .promo, .wp-block-add-to-cart-form .promo {
+    display: block;
+    color: #2d2d2d;
+    font-weight: normal;
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.wc-block-components-radio-control__label .promo strong, .wp-block-add-to-cart-form .promo strong {
+    font-weight: bold;
+    font-size: 15px;
+    color: #64b22c;
+}
+.wc-block-components-radio-control__label .promo .box, .wp-block-add-to-cart-form .promo .box {
+    font-weight: bold;
+    color: #FFF;
+    display: inline-block;
+    padding: 0 5px;
+    line-height: 22px;
+    border-radius: 4px;
+    background-color: #97c641;
+}
+.wc-block-components-radio-control__label .promo img, .wp-block-add-to-cart-form .promo img {
+    position: relative;
+    top: -3px;
+    vertical-align: middle;
+}
+.wc-block-components-radio-control__label .promo.ueno, .wp-block-add-to-cart-form .promo.ueno {
+    color: #235e5e;
+}
+.wc-block-components-radio-control__label .promo.ueno .box, .wp-block-add-to-cart-form .promo.ueno .box {
+    background-color: #20d3a4;
+}
+
+.wc-block-components-radio-control__label, .wp-block-add-to-cart-form {
+	line-height: 25px !important;
+}
+
+.wp-block-add-to-cart-form .promo {
+	padding-bottom: 8px;
+}
+
+.wc-block-components-radio-control-accordion-content div.payment_box {
+	display: block;
+	position: relative;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 1em;
+	margin: 1em 0;
+	font-size: .92em;
+	border-radius: 2px;
+	line-height: 1.5;
+	background-color: #dcd7e3;
+	color: #515151;
+	left: 0;
+}
+
+.wc-block-components-radio-control-accordion-content div.payment_box::before {
+	content: "";
+	display: block;
+	border: 1em solid transparent;
+	border-bottom-color: #dcd7e3;
+	position: absolute;
+	top: -.75em;
+	left: 0;
+	margin: -1em 0 0 2em;
+}
